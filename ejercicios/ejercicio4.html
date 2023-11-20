@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/3f7960f673.js" crossorigin="anonymous"></script>
+	<style>
+		fieldset:disabled{
+		    pointer-events: revert;
+		    opacity: revert;
+		}
+
+		fieldset {
+		    min-width: revert;
+		    padding: revert;
+		    margin: revert;
+		    border: revert;
+		}
+		legend {
+			float: revert;
+    		width: revert;
+    		padding: revert;
+    		margin-bottom: revert;
+    		font-size: revert;
+    		line-height: revert;
+		}
+	</style>
+	<title>Ejercicio 4</title>
+	<script src="../js/ejercicio4.js"></script>
+	<script src="../js/error.js"></script>
+</head>
+<body>
+	<div class="home">
+		<a href="../index.html">
+			<i class="fa-solid fa-house fa-3x m-3"></i>
+		</a>
+	</div>
+	<div class="container p-3" id="main">
+		<div class="container">
+			<div class="card text-center border border-black">
+				<h1>Ejercicio 4</h1>
+			</div>
+		</div>
+		<div class="content mt-3">		
+			<form action="" id="form">
+				<fieldset>
+					<legend>RELLENAR LA SIGUIENTE INFORMACIÓN PARA SU MATRICULA</legend>
+					<div class="d-none" role="alert" id="notification">
+						<span id="notificationText"></span>
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+					<!-- TextArea WHY -->
+					<textarea name="text_why" id="why" cols="50" rows="5">Escriba porqué quiere hacer un CFGS:</textarea>
+					<br>
+					<!-- Select lenguajes -->
+					<label for="lenguaje">¿Con qué lenguaje de programación de los siguientes tiene mas experiencia?</label>
+					<select name="lenguaje" id="lenguaje">
+						<option value="">Seleccione lenguaje</option>
+						<option value="java">Java</option>
+						<option value="c">C</option>
+						<option value="c++">C++</option>
+						<option value="c#">C#</option>
+						<option value="python">Python</option>
+						<option value="javascript">JavaScript</option>
+						<option value="php">PHP</option>
+						<option value="html">HTML</option>
+						<option value="css">CSS</option>
+					</select>
+					<br>
+					<!-- SEARCHED COURSES -->
+					<span>¿Qué CFGS quiere realizar?</span>
+					<input type="checkbox" id="asir" class="CFGS">
+					<label for="asir">ASIR</label>
+					<input type="checkbox" id="dam" class="CFGS">
+					<label for="dam">DAM</label>
+					<input type="checkbox" id="daw" class="CFGS">
+					<label for="daw">DAW</label>
+					<br>
+					<!-- START DATE -->
+					<span>Seleccione una fecha para hacer CFGS:</span>
+					<input type="date" id="date">
+					<br>
+					<!-- CV -->
+					<span>Seleccione su CV: </span>
+					<input type="file" id="cv" name="cv" accept="application/pdf">
+					<br>
+					<!-- WHICH CAN BE COURSED -->
+					<label for="CFGS_POSSIBLES">Indique qué CFGS podría cursar por conocimientos (Mantenga presionado Ctrl para seleccionar varios):</label><br>
+					<select name="CFGS_POSSIBLES" id="CFGS_POSSIBLES" multiple>
+						<option value="SMIR">SMIR</option>
+						<option value="ASIR">ASIR</option>
+						<option value="DAM">DAM</option>
+						<option value="DAW">DAW</option>
+					</select>
+					<br>
+					<!-- SEND -->
+					<input type="submit" value="Enviar" class="btn btn-primary mt-2">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</html>
